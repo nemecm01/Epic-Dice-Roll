@@ -1,0 +1,28 @@
+.navbar{
+    height: 90px;
+}
+#optionsbtn{
+	margin: 20px;
+}
+.modal-title{
+	text-align:center;
+}
+#ch4{
+	height:80px;
+	margin-top: -10px;
+}
+#logoText{
+	height: 80px;
+}
+.glyphicon{
+	color:#FFF;
+	font-size: 25px;
+	padding: 0px;
+}
+body{
+	background: url("images/bigblack.jpg")
+}
+#mainpage{
+    width: 90%;
+}
+
