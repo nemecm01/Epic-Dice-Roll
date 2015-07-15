@@ -1,24 +1,21 @@
 
 minimumvalue = 1; // The minimum value that can be rolled by a die is set here
 
-rnd.today=new Date();
-rnd.seed=rnd.today.getTime();
-
-function rnd() {
-	rnd.seed = (rnd.seed*9301+49297) % 233280;
-	return rnd.seed/(233280.0);
-};
-
-function rand(number) {
-	return Math.ceil(rnd()*number);
+function rand(num) {
+	return Math.ceil(Math.random*num);
 };
 
 function docreset() {
 	document.form1.reset();
 	document.form1.runningtotal.value = "          NOTES\n-------------------------\nThis field records your latest roll at its top.\n\nModified results that would produce a number less than one display as one."
 }
-
-
+function imgCreate(src, alt, title) {
+    var img= IEWIN? new Image() : document.createElement('img');
+    img.src= src;
+    if (alt!=null) img.alt= alt;
+    if (title!=null) img.title= title;
+    return img;
+}
 
 function rolld4() {
        
@@ -58,8 +55,7 @@ function rolld4() {
 	      d4res = minimumvalue;
 		  }	
 	   dtotal = dtotal + "-" + d4mod + "\n" + "Total:" + d4res	
-	}	
-
+	}	  
    document.form1.d4r.value = d4res;	
    rtotal = dtotal + "\n\n" + rtotal;  
    document.form1.runningtotal.value = rtotal;	

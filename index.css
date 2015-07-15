@@ -25,4 +25,11 @@ body{
 #mainpage{
     width: 90%;
 }
-
+.glyphicon-cog {
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
+}
+.glyphicon-cog:hover {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}

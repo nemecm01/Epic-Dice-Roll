@@ -3,12 +3,29 @@
 <head>
     <script src="js/jquery.js"></script>
     <script src="js/diceroll.js"></script>
+    <script src="js/cheet.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="index.css" rel="stylesheet">
-    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="/images/favicon.png"/>
+    
+    <script>
+        cheet('U U D D L R L R b a', function () {
+            document.getElementById("epicsax").play();
+        });
+        cheet('s t a p', function () {
+            document.getElementById("epicsax").pause();
+        });
+        cheet('w a a', function () {
+            document.getElementById("careless").play();
+        });
+         cheet('s t o p', function () {
+            document.getElementById("careless").pause();
+        });
+        
+    </script>
 </head>
 
 <body>
@@ -21,7 +38,9 @@
                     </a>
                 </div>
                 <div class=col-md-3>
+                <a href='swag/charmander.html'> 
                     <image src='images/text2.png' id=logoText></image>
+                </a>
                 </div>
                 <div class=col-md-6>
                 </div>
@@ -59,9 +78,9 @@
                                             <tbody>
                                                 <tr>
                                                     <td align="center" valign="bottom"><font size="2" face="Arial, Helvetica, sans-serif"><b> 
-              Die</b></font></td>
+                                                        Die</b></font></td>
                                                     <td align="center" valign="bottom"><font size="2" face="Arial, Helvetica, sans-serif"><b> 
-              Nbr</b></font></td>
+                                                        Nbr</b></font></td>
                                                     <td></td>
                                                     <td align="center" valign="bottom"><img src="https://www.wizards.com/dnd/dice/images/plusminus.jpg"></td>
                                                     <td align="center" valign="bottom"><font face="Arial, Helvetica, sans-serif" size="2"><b>Modifier</b></font></td>
@@ -330,6 +349,13 @@
         </div>
     </div>
     </div>
+    
+     <audio loop id="epicsax">
+            <source src="swag/epicsax.mp3" type='audio/mpeg'>
+        </audio>
+     <audio loop id="careless">
+            <source src="swag/waa.mp3" type='audio/mpeg'>
+        </audio>
 </body>
 
 
